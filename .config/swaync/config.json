@@ -1,0 +1,29 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-width": 380,
+  "widgets": [
+    "label#time",
+    "label#date",
+    "buttons-grid"
+  ],
+  "widget-config": {
+    "label#time": {
+      "max-lines": 1,
+      "text": "%I:%M %p"
+    },
+    "label#date": {
+      "max-lines": 1,
+      "text": "%A, %B %d"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "🔋 Battery Status",
+          "command": "notify-send 'Power' \"$(cat /sys/class/power_supply/BAT0/capacity)% Remaining\""
+        }
+      ]
+    }
+  }
+}

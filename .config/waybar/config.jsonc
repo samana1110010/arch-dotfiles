@@ -1,0 +1,31 @@
+{
+    "layer": "top",
+    "position": "top", 
+    "height": 34,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+"modules-right": ["tray", "pulseaudio", "network", "battery"],
+
+    "clock": {
+        // This shows: 03:55 PM
+        "format": "  {:%I:%M %p}", 
+        // Click the clock to see: Friday, April 17
+        "format-alt": "  {:%A, %B %d}", 
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "pulseaudio": {
+        "format": " {volume}%",
+        "format-muted": " Muted"
+    }
+"tray": {
+    "spacing": 10
+},
+}

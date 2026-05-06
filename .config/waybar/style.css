@@ -1,0 +1,98 @@
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'FiraCode Nerd Font', sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;
+    color: @foreground;
+    border-bottom: 2px solid @color8;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: @color7;
+}
+
+#workspaces button.active {
+    color: @color4;
+    background-color: @color8;
+}
+
+#workspaces button:hover {
+    background-color: @color7;
+    color: @background;
+}
+
+#window {
+    font-weight: bold;
+    color: @foreground;
+}
+
+#clock,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio,
+#network,
+#tray {
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+#pulseaudio {
+    color: @color2;
+}
+
+#network {
+    color: @color4;
+}
+
+#backlight {
+    color: @color3;
+}
+
+#cpu {
+    color: @color5;
+}
+
+#memory {
+    color: @color6;
+}
+#clock {
+    color: #cba6f7; /* Lavender */
+    background: rgba(203, 166, 247, 0.15);
+    font-weight: bold;
+}
+
+#cpu {
+    color: #89b4fa; /* Sapphire Blue */
+}
+
+#memory {
+    color: #94e2d5; /* Teal */
+}
+
+#backlight {
+    color: #f9e2af; /* Yellow */
+}
+
+#pulseaudio {
+    color: #fab387; /* Peach/Orange */
+}
+
+#network {
+    color: #f5c2e7; /* Pink */
+}
+
+#battery {
+    color: #a6e3a1; /* Green */
+}
+
+#battery.critical {
+    color: #f38ba8; /* Red alert */
+}

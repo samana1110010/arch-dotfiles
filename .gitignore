@@ -1,0 +1,11 @@
+.env
+*.log
+.cache/
+.local/
+*.key
+*.pem
+tokens*
+secrets*
+id_rsa*
+id_ed25519*
+.ssh/
